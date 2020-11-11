@@ -1,0 +1,137 @@
+@import “blog.css”
+
+body {
+  font-size: 12px;
+}
+
+/* Breakpoint didn't work with 800px */
+@media (max-width: 1100px) {
+  #main-container {
+    display: grid;
+    grid-template-columns: 10vw 90vw;
+    grid-template-rows: repeat(4, auto) 0vh;
+    grid-template-areas:
+      "leftHeader header"
+      "leftCol mainContent "
+      "rightHeader na"
+      "leftFooter footer"
+      "leftFooter footer";
+  }
+
+  body {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 1100px) and (max-width: 1600px) {
+  #main-container {
+    display: grid;
+    grid-template-columns: 25vw 60vw 15vw;
+    grid-template-rows: 15vh 80vh 15vh;
+    grid-template-areas:
+      "leftHeader header rightHeader"
+      "leftCol mainContent rightBorder "
+      "leftFooter footer rightFooter";
+  }
+  body {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1600px) {
+  #main-container {
+    display: grid;
+    grid-gap: 60px;
+    grid-template-rows: 15vh 80vh 15vh;
+    grid-template-columns: 25vw 60vw 15vw;
+    grid-template-areas:
+      "leftHeader header rightHeader"
+      "leftCol mainContent rightBorder "
+      "leftFooter footer rightFooter";
+  }
+  body {
+    font-size: 18px;
+  }
+}
+
+#leftHeader {
+  grid-area: leftHeader;
+  align-self: center;
+  width: 100%;
+  padding: 20px 20px 20px 20px;
+  margin: 2px 2px 2px 2px;
+  background-color: rgb(95, 39, 39);
+  color: white;
+}
+
+#header {
+  grid-area: header;
+  text-align: center;
+  font-size: 1.5em;
+  width: 100%;
+  padding: 20px 20px 20px 20px;
+  margin: 2px 2px 2px 2px;
+  background-color: brown;
+  color: white;
+}
+
+#rightHeader {
+  grid-area: rightHeader;
+  align-self: center;
+  width: 100%;
+  padding: 20px 20px 20px 20px;
+  margin: 2px 2px 2px 2px;
+  background-color: rgb(228, 24, 24);
+  color: white;
+}
+
+#leftCol {
+  grid-area: leftCol;
+  align-self: center;
+  width: 100%;
+  padding: 20px 20px 20px 20px;
+  margin: 2px 2px 2px 2px;
+  background-color: blue;
+  color: white;
+}
+
+#mainContent {
+  grid-area: mainContent;
+  align-self: center;
+  width: 100%;
+  padding: 20px 20px 20px 20px;
+  margin: 2px 2px 2px 2px;
+  background-color: orangered;
+  color: white;
+}
+
+#leftFooter {
+  grid-area: leftFooter;
+  align-self: center;
+  width: 100%;
+  padding: 20px 20px 20px 20px;
+  margin: 2px 2px 2px 2px;
+  background-color: violet;
+  color: white;
+}
+
+#footer {
+  grid-area: footer;
+  align-self: center;
+  width: 100%;
+  padding: 20px 20px 20px 20px;
+  margin: 2px 2px 2px 2px;
+  background-color: olive;
+  color: white;
+}
+
+#rightFooter {
+  grid-area: rightFooter;
+  align-self: center;
+  width: 100%;
+  padding: 20px 20px 20px 20px;
+  margin: 2px 2px 2px 2px;
+  background-color: palegreen;
+  color: white;
+}
+
