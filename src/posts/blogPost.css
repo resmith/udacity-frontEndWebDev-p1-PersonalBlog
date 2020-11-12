@@ -1,0 +1,49 @@
+/* @import “blog.css” body {
+  font-size: 12px;
+} */
+
+.header {
+  text-align: center;
+  font-size: 2em;
+  width: 100%;
+  padding: 12px 2px 2px 2px;
+  margin: 2px 2px 2px 2px;
+  color: whitesmoke;
+  text-transform: capitalize;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.menuContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 2px 4px;
+  width: 200px;
+  padding: 2px 2px 2px 2px;
+  margin: 12px 2px 2px 2px;
+  border: 1px solid;
+}
+
+.blogContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.blogTitle {
+  grid-area: content1;
+}
+
+.blogHeading {
+  grid-area: content2;
+}
+
+.blogSubHeading {
+  grid-area: content3;
+}
+
+.blogText {
+  grid-area: content4;
+}
