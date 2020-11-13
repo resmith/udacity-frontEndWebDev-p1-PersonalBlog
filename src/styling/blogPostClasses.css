@@ -1,0 +1,31 @@
+.mainContainer {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  flex: 1;
+}
+
+.leftColContainer {
+  flex: 1;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.blogContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 6px 6px 6px 6px;
+}
+
+.blogTitle {
+  font-size: 1.5em;
+  align-self: center;
+}
+
+.authorInfo {
+  text-align: center;
+  margin-bottom: 9px;
+}

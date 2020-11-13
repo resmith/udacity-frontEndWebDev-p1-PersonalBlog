@@ -1,3 +1,8 @@
+/* menu {
+  display: inline;
+  flex-direction: column;
+} */
+
 .content {
   align-self: center;
   width: 100%;

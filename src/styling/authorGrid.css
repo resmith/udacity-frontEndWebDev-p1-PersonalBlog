@@ -1,0 +1,74 @@
+@media (max-width: 1099px) {
+  #authorInfoContainer {
+    display: grid;
+    grid-template-columns: 95vw;
+    grid-template-rows: 5vw 5vw 3vw 3vw 4vw 40vw 3vw 9vw 3vw 9vw 9vw;
+    grid-template-areas:
+      "authorName"
+      "avatar"
+      "title"
+      "titleInfo"
+      "bio"
+      "bioInfo"
+      "companySchool"
+      "companySchoolInfo"
+      "socialInfo"
+      "socialInfo"
+      "socialInfo";
+  }
+}
+
+@media (min-width: 1100px) {
+  #authorInfoContainer {
+    display: grid;
+    grid-template-columns: 9vw 2vw 30vw 30vw 10vw;
+    grid-template-rows: 5vh 7vh 35vh 10vh 5vh;
+    grid-template-areas:
+      ". . authorName authorName avatar"
+      "title . titleInfo titleInfo titleInfo"
+      "bio . bioInfo bioInfo bioInfo"
+      "companySchool . companySchoolInfo companySchoolInfo companySchoolInfo"
+      "social . socialInfo socialInfo socialInfo";
+    margin-left: 12px;
+  }
+}
+
+#authorName {
+  grid-area: authorName;
+}
+
+#avatar {
+  grid-area: avatar;
+}
+
+#title {
+  grid-area: title;
+}
+
+#titleInfo {
+  grid-area: titleInfo;
+}
+
+#companySchool {
+  grid-area: companySchool;
+}
+
+#companySchoolInfo {
+  grid-area: companySchoolInfo;
+}
+
+#bio {
+  grid-area: bio;
+}
+
+#bioInfo {
+  grid-area: bioInfo;
+}
+
+#social {
+  grid-area: social;
+}
+
+#socialInfo {
+  grid-area: socialInfo;
+}

@@ -1,18 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <link
       href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
       rel="stylesheet"
     />
-    <link href="./src/homePage/grid.css" rel="stylesheet" />
-    <link href="./src/homePage/classes.css" rel="stylesheet" />
-    <link href="./src/common/classes.css" rel="stylesheet" />
-    <link href="./src/common/colors.css" rel="stylesheet" />
-    <link href="./src/common/overrideDefaults.css" rel="stylesheet" />
+    <link href="./src/styling/classes.css" rel="stylesheet" />
+    <link href="./src/styling/colors.css" rel="stylesheet" />
+    <link href="./src/styling/overrideDefaults.css" rel="stylesheet" />
+    <link href="./src/styling/blogListgrid.css" rel="stylesheet" />
+    <link href="./src/styling/blogListClasses.css" rel="stylesheet" />
+
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
     <!-- <meta http-equiv="refresh" content="3" /> -->
@@ -20,33 +25,48 @@
     <title>R Smith Personal Blog</title>
   </head>
   <body>
-    <div id="main-container">
-      <h1 id="header" class="header primaryColor">R Smith Blog Portfolio</h1>
-      <div id="menu" class="secondaryColor">
+    <div id="mainContainer">
+      <header id="header" class="headerContainer">
+        <div>
+          <h1 class="headerTitle">Prototype Blog</h1>
+        </div>
+        <div class="headerIconContainer">
+          <a href="index.html"><span class="material-icons"> home </span></a>
+        </div>
+      </header>
+      <aside class="menuContainer">
         <p class="menuHeader">Past Articles</p>
-        <a class="menuLinks" href="src/posts/blog1.html">Jul 2020</a>
-        <a class="menuLinks" href="src/posts/blog1.html">Jun 2020</a>
-        <a class="menuLinks" href="src/posts/blog1.html">May 2020</a>
-        <a class="menuLinks" href="src/posts/blog1.html">Apr 2020</a>
-        <a class="menuLinks" href="src/posts/blog1.html">Mar 2020</a>
-      </div>
+        <a class="menuLinks" href="src/posts/jsSpread.html">Jul 2020</a>
+        <a class="menuLinks" href="src/posts/jsSpread.html">Jun 2020</a>
+        <a class="menuLinks" href="src/posts/jsSpread.html">May 2020</a>
+        <a class="menuLinks" href="src/posts/jsSpread.html">Apr 2020</a>
+        <a class="menuLinks" href="src/posts/jsSpread.html">Mar 2020</a>
+      </aside>
+      <footer id="footer" class="footer">
+        <a class="hyperlinkNormalText" href="src/posts/credits.html">
+          <h3 class="footerText">Credits</h3>
+        </a>
+        <a class="hyperlinkNormalText" href="src/posts/about.html">
+          <h3 class="footerText">About</h3>
+        </a>
+      </footer>
       <div id="content1" class="content paper">
         <div class="contentHeaderContainer">
           <div class="contentHeaderTextContainer">
-            <a class="hyperlinkNormalText" href="src/posts/blog1.html">
-              <h2 class="contentHeaderText">The sign of the Times</h2>
+            <a class="hyperlinkNormalText" href="src/posts/jsSpread.html">
+              <h2 class="contentHeaderText">The Javascript Spread Operator</h2>
               <p class="contentMeta">Feb 12th by ReSmith</p>
             </a>
           </div>
           <img
             class="contentHeaderImage"
             src="public/hifdzul-muhammad-siregar-F4cib3eJqT0-unsplash.tn.jpg"
-            alt="Italian Trulli"
+            alt="Chandelier in Medan Indonesia"
           />
         </div>
         <p class="contentText">In these times it can be easy to</p>
         <div class="contentTags">
-          <a href="src/posts/blog1.html">...</a>
+          <a href="src/posts/jsSpread.html">...</a>
         </div>
         <p></p>
       </div>
@@ -54,18 +74,20 @@
       <div id="content2" class="content paper">
         <div class="contentHeaderContainer">
           <div class="contentHeaderTextContainer">
-            <h2 class="contentHeaderText">More news about</h2>
-            <p class="contentMeta">Feb 12th by ReSmith</p>
+            <a class="hyperlinkNormalText" href="src/posts/jsSpread.html">
+              <h2 class="contentHeaderText">More news about</h2>
+              <p class="contentMeta">Feb 12th by ReSmith</p>
+            </a>
           </div>
           <img
             class="contentHeaderImage"
             src="public/hifdzul-muhammad-siregar-F4cib3eJqT0-unsplash.tn.jpg"
-            alt="Italian Trulli"
+            alt="Chandelier in Medan Indonesia"
           />
         </div>
         <p class="contentText">In these times it can be easy to</p>
         <div class="contentTags">
-          <a href="src/posts/blog1.html">...</a>
+          <a href="src/posts/jsSpread.html">...</a>
         </div>
         <p></p>
       </div>
@@ -73,18 +95,20 @@
       <div id="content3" class="content paper">
         <div class="contentHeaderContainer">
           <div class="contentHeaderTextContainer">
-            <h2 class="contentHeaderText">The latest news about</h2>
-            <p class="contentMeta">Mar 12th by asd ad</p>
+            <a class="hyperlinkNormalText" href="src/posts/jsSpread.html">
+              <h2 class="contentHeaderText">The latest news about</h2>
+              <p class="contentMeta">Mar 12th by asd ad</p>
+            </a>
           </div>
           <img
             class="contentHeaderImage"
             src="public/hifdzul-muhammad-siregar-F4cib3eJqT0-unsplash.tn.jpg"
-            alt="Italian Trulli"
+            alt="Chandelier in Medan Indonesia"
           />
         </div>
         <p class="contentText">In these times it can be easy to</p>
         <div class="contentTags">
-          <a href="src/posts/blog1.html">...</a>
+          <a href="src/posts/jsSpread.html">...</a>
         </div>
         <p></p>
       </div>
@@ -92,18 +116,20 @@
       <div id="content4" class="content paper">
         <div class="contentHeaderContainer">
           <div class="contentHeaderTextContainer">
-            <h2 class="contentHeaderText">The last we heard was</h2>
-            <p class="contentMeta">Apr 20th by asd ad</p>
+            <a class="hyperlinkNormalText" href="src/posts/jsSpread.html">
+              <h2 class="contentHeaderText">The last we heard was</h2>
+              <p class="contentMeta">Apr 20th by asd ad</p>
+            </a>
           </div>
           <img
             class="contentHeaderImage"
             src="public/hifdzul-muhammad-siregar-F4cib3eJqT0-unsplash.tn.jpg"
-            alt="Italian Trulli"
+            alt="Chandelier in Medan Indonesia"
           />
         </div>
         <p class="contentText">In these times it can be easy to</p>
         <div class="contentTags">
-          <a href="src/posts/blog1.html">...</a>
+          <a href="src/posts/jsSpread.html">...</a>
         </div>
         <p></p>
       </div>
@@ -111,18 +137,20 @@
       <div id="content5" class="content paper">
         <div class="contentHeaderContainer">
           <div class="contentHeaderTextContainer">
-            <h2 class="contentHeaderText">HTML is now ...</h2>
-            <p class="contentMeta">Apr 20th by asd ad</p>
+            <a class="hyperlinkNormalText" href="src/posts/jsSpread.html">
+              <h2 class="contentHeaderText">HTML is now ...</h2>
+              <p class="contentMeta">Apr 20th by asd ad</p>
+            </a>
           </div>
           <img
             class="contentHeaderImage"
             src="public/hifdzul-muhammad-siregar-F4cib3eJqT0-unsplash.tn.jpg"
-            alt="Italian Trulli"
+            alt="Chandelier in Medan Indonesia"
           />
         </div>
         <p class="contentText">In these times it can be easy to</p>
         <div class="contentTags">
-          <a href="src/posts/blog1.html">...</a>
+          <a href="src/posts/jsSpread.html">...</a>
         </div>
         <p></p>
       </div>
@@ -130,26 +158,22 @@
       <div id="content6" class="content paper">
         <div class="contentHeaderContainer">
           <div class="contentHeaderTextContainer">
-            <h2 class="contentHeaderText">CSS was seen ...</h2>
-            <p class="contentMeta">Apr 20th by asd ad</p>
+            <a class="hyperlinkNormalText" href="src/posts/jsSpread.html">
+              <h2 class="contentHeaderText">CSS was seen ...</h2>
+              <p class="contentMeta">Apr 20th by asd ad</p>
+            </a>
           </div>
           <img
             class="contentHeaderImage"
             src="public/hifdzul-muhammad-siregar-F4cib3eJqT0-unsplash.tn.jpg"
-            alt="Italian Trulli"
+            alt="Chandelier in Medan Indonesia"
           />
         </div>
         <p class="contentText">In these times it can be easy to</p>
         <div class="contentTags">
-          <a href="src/posts/blog1.html">...</a>
+          <a href="src/posts/jsSpread.html">...</a>
         </div>
         <p></p>
-      </div>
-
-      <div id="footer" class="footer primaryColor">
-        <a class="hyperlinkNormalText" href="src/about/credits.html">
-          <h3 class="footerText">Credits</h3>
-        </a>
       </div>
     </div>
   </body>

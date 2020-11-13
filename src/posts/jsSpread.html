@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link href="../styling/blogPostClasses.css" rel="stylesheet" />
+    <link href="../styling/classes.css" rel="stylesheet" />
+    <link href="../styling/colors.css" rel="stylesheet" />
+    <link href="../styling/overrideDefaults.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <meta http-equiv="refresh" content="3" />
+
+    <title>R Smith Personal Blog</title>
+  </head>
+  <body>
+    <header id="header" class="headerContainer">
+      <div>
+        <h1 class="headerTitle">Prototype Blog</h1>
+      </div>
+      <div class="headerIconContainer">
+        <a href="../../index.html"
+          ><span class="material-icons"> home </span></a
+        >
+      </div>
+    </header>
+
+    <div class="mainContainer">
+      <div class="leftColContainer">
+        <div class="menuContainer">
+          <p class="menuHeader">Past Articles</p>
+          <a class="menuLinks" href="jsSpread.html">Jul 2020</a>
+          <a class="menuLinks" href="jsSpread.html">Jun 2020</a>
+          <a class="menuLinks" href="jsSpread.html">May 2020</a>
+          <a class="menuLinks" href="jsSpread.html">Apr 2020</a>
+          <a class="menuLinks" href="jsSpread.html">Mar 2020</a>
+        </div>
+        <footer class="footer">
+          <a class="hyperlinkNormalText" href="credits.html">
+            <h3 class="footerText">Credits</h3>
+          </a>
+          <a class="hyperlinkNormalText" href="about.html">
+            <h3 class="footerText">About</h3>
+          </a>
+        </footer>
+      </div>
+      <div class="blogContainer paper">
+        <h2 class="blogTitle">The Javascript Spread Operator</h2>
+        <a href="../authors/resmith.html">
+          <p class="authorInfo">by ReSmith Jun 20th 2020</p>
+        </a>
+        <section>
+          > The Javascript spread operator "...", allows the expansion of
+          objects, arrays and strings into its elements by using the triple dot
+          (...) notation before the variable (e.g. ...variableName). The spread
+          operator can be used to <i>override</i> existing object values. This
+          is useful when reading an existing db record and overwriting the
+          values with the updates. This is also helpful for updating in
+          <u> React props</u> , state values, styling, ...
+        </section>
+        <br />
+        <article>
+          <h3>Example Code</h3>
+          <code>
+            const prevStudentInfo = { id: "123axy" , name: "Nikky",
+            schoolOfStudy: "Nursing", gpa: "3.6" }; <br />
+            const updatedStudentInfo = { name: "Nicole", gpa: "3.9" }; <br />
+            // Override the name and gpa with the new values <br />
+            const currentStudentInfo = { ...prevStudentInfo,
+            ...updatedStudentInfo}
+            <br />
+            console.log(currentStudentInfo);
+          </code>
+        </article>
+        <h3>CodePen</h3>
+        <a href="https://codepen.io/theresmith/pen/XWdVEbv">Code Pen Code</a>
+
+        <h3>Concatenating Arrays</h3>
+        The spread operator can be used to combine two or more arrays into one
+        array.
+
+        <code>
+          const firstSetNumbers = [1 , 2, 3];<br />
+
+          const secondSetNumbers = [4 , 5, 6];<br />
+
+          const combinedNumbers = [...firstSetNumbers, ...secondSetNumbers];<br />
+
+          console.log(combinedNumbers);<br />
+        </code>
+        <div class="buttonContainer">
+          <div>
+            <a class="menuLinks" href="credits.html">
+              <button class="button" type="button"><<<</button>
+            </a>
+          </div>
+          <div>
+            <a class="menuLinks" href="about.html">
+              <button class="button" type="button">>>></button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

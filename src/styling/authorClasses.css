@@ -1,0 +1,25 @@
+.authorInfoTitle {
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+.authorInfo {
+  font-size: 0.9rem;
+  text-align: left;
+  padding-right: 4px;
+  overflow: hidden;
+}
+
+.authorName {
+  margin-top: 4px;
+  margin-bottom: 12px;
+}
+
+.avatar {
+  width: 36px;
+  height: 26px;
+}
+
+.socialIcons {
+  margin: 4px 16px 2px 2px;
+}
