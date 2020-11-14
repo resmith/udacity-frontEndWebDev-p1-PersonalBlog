@@ -27,29 +27,14 @@
 .contentHeaderText {
   display: inline;
   font-family: "Roboto", sans-serif;
-  font-weight: 900;
-  font-size: 1.5em;
   text-transform: capitalize;
   color: black;
   text-decoration: none;
 }
 
-.contentHeaderImage {
-  display: inline;
-  align-self: flex-end;
-  width: 72px;
-  height: 72px;
-}
-
 .contentMeta {
-  font-size: 0.75em;
   margin: 4px 4px 12px 4px;
   font-style: italic;
   color: black;
   text-decoration: none;
-}
-
-.contentText {
-  font-size: 1em;
-  margin: 4px 4px 8px 4px;
 }

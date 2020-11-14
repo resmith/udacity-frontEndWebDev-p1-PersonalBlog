@@ -1,3 +1,31 @@
+/* Anything smaller than first breakpoint 600px */
+@media (max-width: 800px) {
+  .contentHeaderImage {
+    display: inline;
+    align-self: flex-end;
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1200px) {
+  .contentHeaderImage {
+    display: inline;
+    align-self: flex-end;
+    width: 72px;
+    height: 72px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contentHeaderImage {
+    display: inline;
+    align-self: flex-end;
+    width: 96px;
+    height: 86px;
+  }
+}
+
 .headerTitle {
   text-align: center;
   font-size: 2em;
@@ -7,6 +35,19 @@
   color: black;
   background-color: WhiteSmoke;
   text-transform: capitalize;
+}
+
+.headerContainer {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 4px 0px 2px 2px;
+  margin: 2px 2px 12px 2px;
+  border-radius: 6px;
+  border: 1px;
+  border-bottom: 2px solid #dbe8f7;
 }
 
 .headerIconContainer {

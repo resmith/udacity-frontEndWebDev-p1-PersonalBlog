@@ -13,15 +13,18 @@ _Note:_ this is a static HTML site and requires no web server
 
 ## Application Flow
 
+```
 | - BlogList (entry point is index.html)
 | \ BlogPost - by clicking on any article in the BlogList
 _note_ - currently there is only the JS spread operator article
 \ about - is in the footer, which is the bottom of the left column
 \ credits - is in the footer, which is the bottom of the left column
 | \ authors - enter by viewing an article and clicking on the author's name
+```
 
 ## Page Structure
 
+```
 |-------------------- HEADER ---------------------------
 | menu . . . ."
 | menu content1 . content2"
@@ -30,6 +33,7 @@ _note_ - currently there is only the JS spread operator article
 | menu
 | menu content5 . content6 "
 | footer ";
+```
 
 The page structure is defined in:
 
@@ -40,11 +44,13 @@ Normally only one system would be used for defining the structure. Two were used
 
 ## Directory Structure
 
+```
 | - Index.html (the entry point)
 | \ src - the direcotry where the rest of the code is at
 | \ authors - information on the authors for the articles
 | \ posts - the posts
 | \ styling - holds the CSS for the grids, flexbox and styling
+```
 
 ## Notes
 
@@ -56,3 +62,22 @@ Normally only one system would be used for defining the structure. Two were used
 
 - Used <link > for importing stylesheets instead of @import based on StackOverflow recommendation
   [Link vs import](https://stackoverflow.com/questions/10036977/best-way-to-include-css-why-use-import)
+
+## Notes for Udacity Reviewer
+
+- The image caption (using figcaption) is in the src/blogPosts/credits.html page
+
+The following information is in the author page, which is accessed by view the post and clicking on the authors name
+
+Blog Post
+✅Header
+❌Author Info
+❌Name
+❌Title
+❌Current Company/School
+❌Short Bio
+❌Avatar
+❌Social Sharing
+❌Twitter
+❌Facebook
+❌LinkedIn
