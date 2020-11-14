@@ -45,11 +45,21 @@ Normally only one system would be used for defining the structure. Two were used
 ## Directory Structure
 
 ```
-| - Index.html (the entry point)
-| \ src - the direcotry where the rest of the code is at
-| \ authors - information on the authors for the articles
-| \ posts - the posts
-| \ styling - holds the CSS for the grids, flexbox and styling
+| Index.html (the entry point)
+| \ src - the directory where the rest of the code is at
+|   \ authors - information on the authors for the articles
+      \ css - css styling for the author content
+
+|   \ blogList - the posts
+      \ css - css styling for the blogList (index.html)
+
+|   \ blogPosts - holds the CSS for the grids, flexbox and styling
+      \ css - css styling for the blogPosts (index.html)
+
+|   \ shared - holds shared code / assets
+      \ css - css styling used by multiple categories
+
+
 ```
 
 ## Notes
@@ -67,8 +77,9 @@ Normally only one system would be used for defining the structure. Two were used
 
 - The image caption (using figcaption) is in the src/blogPosts/credits.html page
 
-The following information is in the author page, which is accessed by view the post and clicking on the authors name
+The following information is in the author page, which is accessed by view the post and clicking on the authors name. It shows they were not there in the review, but they were in the authors page.
 
+```
 Blog Post
 ✅Header
 ❌Author Info
@@ -81,3 +92,5 @@ Blog Post
 ❌Twitter
 ❌Facebook
 ❌LinkedIn
+``
+```
