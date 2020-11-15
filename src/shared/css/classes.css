@@ -69,6 +69,15 @@
   border: 1px solid;
 }
 
+.menuContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 4px 4px 4px 4px;
+  /* border: 1px solid; */
+  border-radius: 4px;
+  background-color: #f2d399;
+}
+
 .menuHeader {
   align-self: center;
   font-size: 1.15em;
@@ -86,6 +95,20 @@
   padding: 2px 2px 2px 2px;
   margin: 2px 2px 2px 2px;
   display: block;
+}
+
+.footer {
+  height: 100%;
+  background-color: #d98236;
+  border-radius: 4px;
+}
+
+.footerText {
+  font-size: 1em;
+  font-weight: 500;
+  color: white;
+  text-transform: capitalize;
+  vertical-align: middle;
 }
 
 .hyperlinkNormalText {
@@ -122,12 +145,6 @@
 
 .button:active {
   animation: pressed 0.9s linear;
-}
-
-.footerText {
-  font-size: 1em;
-  color: DimGray;
-  text-transform: capitalize;
 }
 
 .blogTitle {

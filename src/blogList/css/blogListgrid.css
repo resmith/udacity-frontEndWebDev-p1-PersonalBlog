@@ -6,11 +6,11 @@
     grid-template-rows: 12h 12vh 12vh 12vh 12vh 12vh 12vh;
     grid-template-areas:
       "header header header"
-      "menu . content1"
+      "menu   . content1"
       "menu . content2"
       "menu . content3 "
       "menu . content4"
-      "menu . content5 "
+      "menu     . content5 "
       "footer . content6";
   }
 
@@ -45,16 +45,17 @@
   #mainContainer {
     display: grid;
     grid-template-columns: 10vw 2vw 40vw 2vw 40vw;
-    grid-template-rows: 12vh 2vh 25vh 2vh 25vh 2vh 25vh 2vh;
+    grid-template-rows: 12vh 2vh 23vh 2vh 23vh 2vh 20vh 8vh;
     grid-template-areas:
       "header header header header header"
-      "menu . . . . "
+      ". . . . . "
       "menu . content1 . content2"
       "menu . . . . "
       "menu . content3 . content4"
       "menu . . . . "
-      "menu . content5 . content6"
-      "footer footer footer footer footer ";
+      "menu  . content5 . content6"
+      ". . . . ."
+      ". footer footer footer footer ";
   }
 
   body {
@@ -87,15 +88,16 @@
 @media (min-width: 1200px) {
   #mainContainer {
     display: grid;
-    grid-template-columns: 7vw 1vw 29vw 1vw 29vw 1vw 29vw;
-    grid-template-rows: 14vh 3vh 25vh 3vh 25vh 2vh 25vh 2vh;
+    grid-template-columns: 10vw 1vw 27vw 1vw 27vw 1vw 27vw;
+    grid-template-rows: 12vh 3vh 25vh 3vh 25vh 22vh 6vh;
     grid-template-areas:
       "header header header header header header header"
-      "menu . . . . . . "
+      ". . . . . . . "
       "menu . content1 . content2 . content3"
       "menu . . . . . . "
-      "menu . content4 . content5 . content6"
-      "footer footer footer footer footer footer footer ";
+      "menu  . content4 . content5 . content6"
+      ".  . . . . . ."
+      ". footer footer footer footer footer footer ";
   }
 
   body {
@@ -104,11 +106,11 @@
 
   .contentHeaderTextSize {
     font-weight: 900;
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
 
   .contentTextSize {
-    font-size: 1em;
+    font-size: 0.9em;
     margin: 4px 4px 8px 4px;
   }
 
@@ -120,6 +122,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
   }
 }
 

@@ -1,8 +1,8 @@
 @media (max-width: 1099px) {
   #authorInfoContainer {
     display: grid;
-    grid-template-columns: 95vw;
-    grid-template-rows: 5vw 5vw 3vw 3vw 4vw 40vw 3vw 9vw 3vw 9vw 9vw;
+    grid-template-columns: 70vw;
+    grid-template-rows: 4vw 4vw 3vw 3vw 3vw 25vw 3vw 12vw 4vw 9vw 9vw;
     grid-template-areas:
       "authorName"
       "avatar"
@@ -11,25 +11,35 @@
       "bio"
       "bioInfo"
       "companySchool"
-      "companySchoolInfo"
-      "socialInfo"
+      "schoolInfo"
+      "social"
       "socialInfo"
       "socialInfo";
+  }
+
+  .avatar {
+    width: 36px;
+    height: 26px;
   }
 }
 
 @media (min-width: 1100px) {
   #authorInfoContainer {
     display: grid;
-    grid-template-columns: 9vw 2vw 30vw 30vw 10vw;
+    grid-template-columns: 9vw 2vw 55vw 10vw 5vw;
     grid-template-rows: 5vh 7vh 35vh 10vh 5vh;
     grid-template-areas:
-      ". . authorName authorName avatar"
-      "title . titleInfo titleInfo titleInfo"
-      "bio . bioInfo bioInfo bioInfo"
-      "companySchool . companySchoolInfo companySchoolInfo companySchoolInfo"
-      "social . socialInfo socialInfo socialInfo";
+      ".             . authorName  avatar     ."
+      "title         . titleInfo   titleInfo  ."
+      "bio           . bioInfo     bioInfo    ."
+      "companySchool . schoolInfo  schoolInfo ."
+      "social        . socialInfo  socialInfo .";
     margin-left: 12px;
+  }
+
+  .avatar {
+    width: 72px;
+    height: 72px;
   }
 }
 
@@ -53,8 +63,8 @@
   grid-area: companySchool;
 }
 
-#companySchoolInfo {
-  grid-area: companySchoolInfo;
+#schoolInfo {
+  grid-area: schoolInfo;
 }
 
 #bio {
