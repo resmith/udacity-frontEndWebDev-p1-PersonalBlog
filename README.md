@@ -39,6 +39,8 @@ The oveall page structure is defined in src/shared/pageGrid.css
 _Note:_ The content is the same but placement varies depending on screen size to create a responsive layout.
 
 Each pageType then defines it's own grid or flexbox within the content. For example, the blogPost defines the content within blogPostGrid.css as:
+
+```
 grid-template-columns: 80vw;
 grid-template-rows: 5vh 5vh 65vh 8vh;
 grid-template-areas:
@@ -46,6 +48,7 @@ grid-template-areas:
 "author"
 "article"
 "buttons";
+```
 
 ## Directory Structure
 
