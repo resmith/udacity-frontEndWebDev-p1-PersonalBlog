@@ -1,6 +1,6 @@
-@import "../../shared/css/classes.css";
-@import "../../shared/css/colors.css";
 @import "../../shared/css/overrideDefaults.css";
-@import "../../blogPosts/css/blogPost.css";
+@import "../../shared/css/pageGrid.css";
+@import "../../shared/css/pageClasses.css";
+@import "../../shared/css/colors.css";
 @import "authorsGrid.css";
 @import "authors.css";

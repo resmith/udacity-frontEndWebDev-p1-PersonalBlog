@@ -1,0 +1,76 @@
+/* Anything smaller than first breakpoint 600px */
+@media (max-width: 800px) {
+  #pageContainer {
+    display: grid;
+    grid-template-columns: 10vw 2vw 80vw;
+    grid-template-rows: 10vh 80vh 9vh;
+    grid-template-areas:
+      "header header header"
+      "menu   . content"
+      "footer . content";
+  }
+
+  body {
+    font-size: 0.8em;
+  }
+}
+
+/* Medium Screens */
+@media (min-width: 800px) and (max-width: 1200px) {
+  #pageContainer {
+    display: grid;
+    grid-template-columns: 10vw 2vw 84vw;
+    grid-template-rows: 10vh 2vh 80vh 1vh 3vh 2vh;
+    grid-template-areas:
+      "header header header"
+      ". . . "
+      "menu   . content"
+      ". . ."
+      ". footer footer "
+      ". . .";
+  }
+
+  body {
+    font-size: 1em;
+  }
+}
+
+/* Large Screens */
+@media (min-width: 1200px) {
+  #pageContainer {
+    display: grid;
+    grid-template-columns: 10vw 2vw 86vw;
+    grid-template-rows: 10vh 2vh 80vh 1vh 3vh 1vh;
+    grid-template-areas:
+      "header header header"
+      ". . . "
+      "menu   . content"
+      ". . ."
+      ". footer footer "
+      ". . .";
+  }
+
+  body {
+    font-size: 1.1em;
+  }
+}
+
+/* Associate the ids to the grids */
+
+#header {
+  grid-area: header;
+}
+
+#content {
+  grid-area: content;
+  width: 98%;
+  height: 95%;
+}
+
+#menu {
+  grid-area: menu;
+}
+
+#footer {
+  grid-area: footer;
+}

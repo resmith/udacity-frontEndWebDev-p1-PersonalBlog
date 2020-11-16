@@ -1,7 +1,7 @@
-@media (max-width: 1099px) {
+@media (max-width: 800px) {
   #authorInfoContainer {
     display: grid;
-    grid-template-columns: 70vw;
+    grid-template-columns: 80vw;
     grid-template-rows: 4vw 4vw 3vw 3vw 3vw 25vw 3vw 12vw 4vw 9vw 9vw;
     grid-template-areas:
       "authorName"
@@ -21,13 +21,25 @@
     width: 36px;
     height: 26px;
   }
+
+  .authorInfoTitle {
+    font-size: 0.8rem;
+    font-weight: 900;
+  }
+
+  .authorInfo {
+    font-size: 0.8rem;
+    text-align: left;
+    padding-right: 4px;
+    overflow: hidden;
+  }
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 800px) and (max-width: 1200px) {
   #authorInfoContainer {
     display: grid;
     grid-template-columns: 9vw 2vw 55vw 10vw 5vw;
-    grid-template-rows: 5vh 7vh 35vh 10vh 5vh;
+    grid-template-rows: 6vh 4vh 35vh 10vh 5vh;
     grid-template-areas:
       ".             . authorName  avatar     ."
       "title         . titleInfo   titleInfo  ."
@@ -40,6 +52,50 @@
   .avatar {
     width: 72px;
     height: 72px;
+  }
+
+  .authorInfoTitle {
+    font-size: 0.9rem;
+    font-weight: 900;
+  }
+
+  .authorInfo {
+    font-size: 0.9rem;
+    text-align: left;
+    padding-right: 4px;
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 1200px) {
+  #authorInfoContainer {
+    display: grid;
+    grid-template-columns: 9vw 2vw 55vw 10vw 5vw;
+    grid-template-rows: 9vh 7vh 35vh 10vh 5vh;
+    grid-template-areas:
+      ".             . authorName  avatar     ."
+      "title         . titleInfo   titleInfo  ."
+      "bio           . bioInfo     bioInfo    ."
+      "companySchool . schoolInfo  schoolInfo ."
+      "social        . socialInfo  socialInfo .";
+    margin-left: 12px;
+  }
+
+  .avatar {
+    width: 72px;
+    height: 72px;
+  }
+
+  .authorInfoTitle {
+    font-size: 1.1rem;
+    font-weight: 900;
+  }
+
+  .authorInfo {
+    font-size: 1rem;
+    text-align: left;
+    padding-right: 4px;
+    overflow: hidden;
   }
 }
 

@@ -1,0 +1,72 @@
+/* Anything smaller than first breakpoint 600px */
+@media (max-width: 800px) {
+  #blogPostsContainer {
+    display: grid;
+    grid-template-columns: 80vw;
+    grid-template-rows: 5vh 5vh 65vh 8vh;
+    grid-template-areas:
+      "title"
+      "author"
+      "article"
+      "buttons";
+    overflow: hidden;
+  }
+
+  body {
+    font-size: 0.6em;
+  }
+}
+
+/* Medium Screens */
+@media (min-width: 800px) and (max-width: 1200px) {
+  #blogPostsContainer {
+    display: grid;
+    grid-template-columns: 82vw;
+    grid-template-rows: 5vh 5vh 55vh 4vh;
+    grid-template-areas:
+      "title"
+      "author"
+      "article"
+      "buttons";
+  }
+
+  body {
+    font-size: 0.8em;
+  }
+}
+
+/* Large Screens */
+@media (min-width: 1200px) {
+  #blogPostsContainer {
+    display: grid;
+    grid-template-columns: 82vw;
+    grid-template-rows: 7vh 5vh 55vh 8vh;
+    grid-template-areas:
+      "title"
+      "author"
+      "article"
+      "buttons";
+    overflow: hidden;
+  }
+
+  body {
+    font-size: 0.8em;
+  }
+}
+
+/* Associate the ids to the grids */
+#title {
+  grid-area: title;
+}
+
+#author {
+  grid-area: author;
+}
+
+#article {
+  grid-area: article;
+}
+
+#buttons {
+  grid-area: buttons;
+}

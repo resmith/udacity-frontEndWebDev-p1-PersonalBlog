@@ -1,17 +1,15 @@
 /* Anything smaller than first breakpoint 600px */
 @media (max-width: 800px) {
-  #mainContainer {
+  #blogListContainer {
     display: grid;
-    grid-template-columns: 10vw 2vw 70vw;
-    grid-template-rows: 12h 12vh 12vh 12vh 12vh 12vh 12vh;
+    grid-template-columns: 80vw;
+    grid-template-rows: repeat(6, 17vh);
     grid-template-areas:
-      "header header header"
-      "menu   . content1"
-      "menu . content2"
-      "menu . content3 "
-      "menu . content4"
-      "menu     . content5 "
-      "footer . content6";
+      "content1"
+      "content2"
+      "content3 "
+      "content4"
+      "content5 ";
   }
 
   body {
@@ -30,32 +28,21 @@
 
   .contentMetaSize {
     font-size: 0.75em;
-  }
-
-  #footer {
-    grid-area: footer;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
   }
 }
 
 /* Medium Screens */
 @media (min-width: 800px) and (max-width: 1200px) {
-  #mainContainer {
+  #blogListContainer {
     display: grid;
-    grid-template-columns: 10vw 2vw 40vw 2vw 40vw;
-    grid-template-rows: 12vh 2vh 23vh 2vh 23vh 2vh 20vh 8vh;
+    grid-template-columns: 40vw 2vw 40vw;
+    grid-template-rows: 23vh 2vh 23vh 2vh 23vh;
     grid-template-areas:
-      "header header header header header"
-      ". . . . . "
-      "menu . content1 . content2"
-      "menu . . . . "
-      "menu . content3 . content4"
-      "menu . . . . "
-      "menu  . content5 . content6"
-      ". . . . ."
-      ". footer footer footer footer ";
+      "content1 . content2"
+      ". . . "
+      "content3 . content4"
+      ". . . "
+      "content5 . content6";
   }
 
   body {
@@ -75,29 +62,18 @@
   .contentMetaSize {
     font-size: 0.75em;
   }
-
-  #footer {
-    grid-area: footer;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
 }
 
 /* Large Screens */
 @media (min-width: 1200px) {
-  #mainContainer {
+  #blogListContainer {
     display: grid;
-    grid-template-columns: 10vw 1vw 27vw 1vw 27vw 1vw 27vw;
-    grid-template-rows: 12vh 3vh 25vh 3vh 25vh 22vh 6vh;
+    grid-template-columns: 27vw 1vw 27vw 1vw 27vw;
+    grid-template-rows: 25vh 5vh 25vh;
     grid-template-areas:
-      "header header header header header header header"
-      ". . . . . . . "
-      "menu . content1 . content2 . content3"
-      "menu . . . . . . "
-      "menu  . content4 . content5 . content6"
-      ".  . . . . . ."
-      ". footer footer footer footer footer footer ";
+      "content1 . content2 . content3"
+      ". . . . . "
+      "content4 . content5 . content6";
   }
 
   body {
@@ -116,13 +92,6 @@
 
   .contentMetaSize {
     font-size: 0.75em;
-  }
-  #footer {
-    grid-area: footer;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
   }
 }
 
@@ -149,12 +118,4 @@
 
 #content6 {
   grid-area: content6;
-}
-
-#header {
-  grid-area: header;
-}
-
-#menu {
-  grid-area: menu;
 }
