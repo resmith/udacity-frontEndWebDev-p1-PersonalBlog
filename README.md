@@ -24,23 +24,28 @@ _note_ - currently there is only the JS spread operator article
 
 ## Page Structure
 
+The oveall page structure is defined in src/shared/pageGrid.css
+
 ```
-|-------------------- HEADER ---------------------------
-| menu . . . ."
-| menu content1 . content2"
-| menu
-| menu content3 . content4"
-| menu
-| menu content5 . content6 "
-| footer ";
+      "header header header"
+      ".      .      . "
+      "menu   .      content"
+      ".      .      ."
+      ".      footer footer "
+      ".      .      .";
+
 ```
 
-The page structure is defined in:
+_Note:_ The content is the same but placement varies depending on screen size to create a responsive layout.
 
-- for index.html it's defined in src/styling/blogListGrid.css using the Grid System
-- for the other pages it's defined in src/styling/blogPostClasses.css using flexBox
-
-Normally only one system would be used for defining the structure. Two were used to demonstrate knowledge of both.
+Each pageType then defines it's own grid or flexbox within the content. For example, the blogPost defines the content within blogPostGrid.css as:
+grid-template-columns: 80vw;
+grid-template-rows: 5vh 5vh 65vh 8vh;
+grid-template-areas:
+"title"
+"author"
+"article"
+"buttons";
 
 ## Directory Structure
 
@@ -72,25 +77,3 @@ Normally only one system would be used for defining the structure. Two were used
 
 - Used <link > for importing stylesheets instead of @import based on StackOverflow recommendation
   [Link vs import](https://stackoverflow.com/questions/10036977/best-way-to-include-css-why-use-import)
-
-## Notes for Udacity Reviewer
-
-- The image caption (using figcaption) is in the src/blogPosts/credits.html page
-
-The following information is in the author page, which is accessed by view the post and clicking on the authors name. It shows they were not there in the review, but they were in the authors page.
-
-```
-Blog Post
-✅Header
-❌Author Info
-❌Name
-❌Title
-❌Current Company/School
-❌Short Bio
-❌Avatar
-❌Social Sharing
-❌Twitter
-❌Facebook
-❌LinkedIn
-``
-```
